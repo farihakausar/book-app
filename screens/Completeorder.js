@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View ,ScrollView,Image,ImageBackground} from 'react-native'
 import React from 'react'
-
+import Booktab from '../components/Booktab';
 import { Button, Card, IconButton } from "react-native-paper";
 const image = { uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW78GtG0TVe0JqO-8hJVnv_RQC8xPRFONL1Q&usqp=CAU" };
 const Completeorder = () => {
@@ -14,94 +14,7 @@ const Completeorder = () => {
      
      
     
-      < View style={[styles.box,styles.container]}>
-     <View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-      <View>
-     <Image  source={require("../assets/phy.jpg")} style={styles.stretch}></Image></View>
-     <View>
-<Text style={{ textAlign:"center",fontWeight:"bold"}}>BOOK NAME</Text>
-<Text style={{ textAlign:"center"}}>Author name</Text></View>
-
-  <View>
-<Text style={{ borderLeftColor:"black",borderLeftWidth:1,height:60,padding:9,fontWeight:"bold"}}>PKR 567</Text></View></View>
-
-<View>
-<View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-< Button style={styles.btn}
-                                    
-                               
-                                    >View</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Approve</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Cancel</Button>
-                                    </View>
-</View>
-     
-     </View>
-  
-     < View style={[styles.box,styles.container]}>
-     <View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-      <View>
-     <Image  source={require("../assets/computer.jpg")} style={styles.stretch}></Image></View>
-     <View>
-<Text style={{ textAlign:"center",fontWeight:"bold"}}>BOOK NAME</Text>
-<Text style={{ textAlign:"center"}}>Author name</Text></View>
-
-  <View>
-<Text style={{ borderLeftColor:"black",borderLeftWidth:1,height:60,padding:9,fontWeight:"bold"}}>PKR 567</Text></View></View>
-
-<View>
-<View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-< Button style={styles.btn}
-                                    
-                               
-                                    >View</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Approve</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Cancel</Button>
-                                    </View>
-</View>
-     
-     </View>
-     < View style={[styles.box,styles.container]}>
-     <View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-      <View>
-     <Image  source={require("../assets/math.jpg")} style={styles.stretch}></Image></View>
-     <View>
-<Text style={{ textAlign:"center",fontWeight:"bold"}}>BOOK NAME</Text>
-<Text style={{ textAlign:"center"}}>Author name</Text></View>
-
-  <View>
-<Text style={{ borderLeftColor:"black",borderLeftWidth:1,height:60,padding:9,fontWeight:"bold"}}>PKR 567</Text></View></View>
-
-<View>
-<View style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
-< Button style={styles.btn}
-                                    
-                               
-                                    >View</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Approve</Button>
-                                     < Button
-                                    style={styles.btn}
-                               
-                                    >Cancel</Button>
-                                    </View>
-</View>
-     
-     </View>
+     <Booktab/>
     
     </View>
     </ScrollView>
